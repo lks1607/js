@@ -7,9 +7,32 @@
     <title>연습연습</title>
   </head>
   <body>
-    <div class="hello">
-      <h1>Hi</h1>
+    <form class="hidden" id="login-form">
+      <input
+        type="text"
+        placeholder="What is your name?"
+        maxlength="15"
+        required
+      />
+
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+
+    <h2 id="clock">00:00</h2>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
     </div>
-    <script src="./JS/app.js"></script>
+    <script src="./JS/greeting.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/quotes.js"></script>
+    <script src="./JS/background.js"></script>
+    <script src="./JS/todo.js"></script>
   </body>
 </html>

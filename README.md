@@ -21,8 +21,11 @@ prompt : 사용자에게 창을 띄울 수 있게 해줌 (string값 , def`au`lt�
 typeof : 값의 type을 보는 방법
 parseInt() : string을 number 값으로 변환
 isNaN() : boolean값 으로 return함 / number인지 아닌지 알려줌 false 일 경우 숫자
+getElementById = html의 해당되는 아이디 을 가져옴
+getElementByClassName = html의 해당되는 class 값을 가져옴 / 다수일 경우 array 형식으로 가져옴
 querySelector = element를 css방식으로 검색할 수 있음 (첫번째 element값만 가져옴)
 querySelectorAll = 조건의 부합하는 element값을 다 가져옴
+preventDefault() : 어떤 event의 기본 행동이든지 발생되지 않도록 막는것.
 
 ## 배열
 
@@ -139,3 +142,29 @@ myArray.forEach((element) => {
   console.log('나무 찍기' + element);
 });
 ```
+
+## Event
+
+.addEventListener("이벤트") = 이벤트사용할때 사용
+.removeEvenListener = 이벤트 제거 가능
+
+- 종류
+  click : 클릭했을경우
+  mouseenter : 커서가 올라가있는경우
+  mouseleave : 커서가 내려간경우
+  resize : 창 사이즈가 변경 되었을경우
+  copy : 복사 했을경우
+  offline : 브라우저가 인터넷연결이 안됐을경우
+  online : 브라우저가 인터넷연결이 됐을경우
+
+## clock
+
+interval : '매번' 일어나야 하는 무언가를 말할경우 / ex) 매 2초마다 무엇을 일어나게 할 경우 사용
+setinterval : setinterval(사용하고자 하는 function, 사용할 시간(ms))
+
+## Math
+
+Math.random() : 0~1 까지의 값을 랜덤으로줌 / random \* 원하는수 : 0~원하는수 까지의 값을 랜덤으로 줌
+Math.round() : 반올림값을 줌
+Math.ceil() : 값을 천장까지 높여서 줌 ex) 1.1 = 2
+Math.floor() : 값을 바닥까지 낮춤 ex) 1.9 = 1
