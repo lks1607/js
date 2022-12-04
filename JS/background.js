@@ -4,9 +4,9 @@ const images = [
     "river.jpg"
 ];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const choseImage = images[Math.floor(Math.random() * images.length)];
 
 const image = document.createElement("img");
-image.src =`img/${chosenImage}`;
+image.src =`img/${choseImage}`;
 
 document.body.appendChild(image);
